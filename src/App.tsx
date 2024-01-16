@@ -25,7 +25,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <FormProvider>
         <GlobalStyles />
-        <Header title="Bueno" />
+        <Header title="Buena" />
         <Template>
           <BrowserRouter>
             <Routes>
