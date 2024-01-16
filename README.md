@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Project Overview: Multi-Page Form with React and TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This project showcases a multipage form implementation using React and TypeScript. The application is designed to guide users through an onboarding process with a dynamic form that adapts based on the parameters provided in the route.
 
-## Available Scripts
+## Technology Stack
+- **React:** The project is built using React, a widely adopted JavaScript library for building user interfaces. Its component-based architecture promotes reusability and maintainability.
 
-In the project directory, you can run:
+- **TypeScript:** TypeScript is used to add static typing to the project, enhancing code quality and developer productivity by catching errors during development.
 
-### `npm start`
+- **Styled-components:** The application's components are styled using the styled-components library, providing a robust and maintainable way to manage styles in a React application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **react-router-dom:** For navigation and styling, react-router-dom is employed. It facilitates dynamic routing, ensuring seamless transitions between different sections of the form.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Context API:** The form data is managed globally using React's Context API. This choice was made for its simplicity, making it well-suited for a smaller application like this one. It eliminates the need for prop drilling and provides a clean way to manage global state.
 
-### `npm test`
+## Project Structure
+- **Landing Screen:**The application starts with a LandingScreen and transitions to the onboarding screen based on user interactions.
+- **Onboarding Screen:**The form components are dynamically rendered based on the route parameters, creating a personalized onboarding experience.
+- **Details Screen:** After completing the onboarding process, users can navigate to the Details Screen, where they can view and edit the entered details.
+- **Submitted Screen:** Upon successfully submitting the form, users are directed to the Submitted Screen, displaying a final confirmation message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Test
+To run the project locally, follow these steps:
 
-### `npm run build`
+## How to Test
+To run the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+     npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Access the LandingScreen, click the "Let's go" button to navigate through the onboarding screens, and explore the Details and Submitted Screens after completing the form
 
-### `npm run eject`
+## Future Improvements
+Given more time, the following enhancements could be considered:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Automated Tests:** Utilize the `react-testing-library` to write automated tests, ensuring the reliability and stability of the application.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Persistent Form Data:** Store form information in browser storage to allow data persistence across page refreshes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Back Button Functionality:** Implement a back button to allow users to navigate to the previous form entry, enhancing user experience.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Design Refinement:** Allocate time for further design improvements to create a more polished and visually appealing user interface.
 
-## Learn More
+ **Security Enhancements:**
+  - Implement additional security checks to ensure that users cannot move forward to the Details and Submitted Screens if the form data is incomplete or invalid.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Detailed Theme:** Enhance the visual appeal by creating a more detailed and comprehensive theme for the application, ensuring a cohesive and engaging user interface.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Component Reusability:** Refactor and optimize components for increased reusability across different sections of the application, promoting a more modular and maintainable codebase.
+
+
+Feel free to go through the project and ask any questions, and feedback is always appreciated!
